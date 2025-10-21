@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Multimedia: París</title>
+    <style>
+        /* Estilos básicos para presentación */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ddd;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 30px;
+        }
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera de la página -->
+    <header>
+        <h1>Ficha Multimedia: París</h1>
+    </header>
 
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#imagenes">Imágenes</a> | 
+        <a href="#video">Vídeo</a> | 
+        <a href="#audio">Audio</a> | 
+        <a href="#mapa">Mapa</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de imágenes -->
+        <article id="imagenes">
+            <h2>Imágenes de París</h2>
+
+            <!-- Imagen 1 -->
+            <img src="imagenes/torre_eiffel.jpg" alt="Vista de la Torre Eiffel al atardecer">
+
+            <!-- Imagen 2 -->
+            <img src="imagenes/louvre.jpg" alt="Fachada del Museo del Louvre desde el exterior">
+
+            <!-- Imagen 3 con figure y figcaption -->
+            <figure>
+                <img src="imagenes/notredame.jpg" alt="Catedral de Notre Dame" />
+                <figcaption>
+                    La Catedral de Notre Dame es uno de los monumentos más emblemáticos de París.
+                </figcaption>
+            </figure>
+        </article>
+
+        <!-- Sección de vídeo -->
+        <article id="video">
+            <h2>Vídeo sobre París</h2>
+            <video controls poster="imagenes/poster_video.jpg">
+                <source src="videos/paris.mp4" type="video/mp4">
+                <source src="videos/paris.webm" type="video/webm">
+                Tu navegador no soporta la reproducción de vídeo.
+            </video>
+        </article>
+
+        <!-- Sección de audio -->
+        <article id="audio">
+            <h2>Audio: Sonido de París</h2>
+            <p>Escucha los sonidos típicos de la ciudad: campanas de iglesias, música callejera y ambiente urbano.</p>
+            <audio controls>
+                <source src="audios/paris.mp3" type="audio/mpeg">
+                <source src="audios/paris.ogg" type="audio/ogg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </article>
+
+        <!-- Sección de mapa o iframe -->
+        <article id="mapa">
+            <h2>Mapa de París</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999879667059!2d2.292292615674405!3d48.85837307928738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdfc6f5a8a9%3A0x40b82c3688c9460!2sTorre%20Eiffel!5e0!3m2!1ses!2ses!4v1600000000000!5m2!1ses!2ses" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                title="Mapa de París">
+            </iframe>
+        </article>
+
+        <!-- Información adicional -->
+        <aside>
+            <h3>Dato Curioso</h3>
+            <p>París es conocida como "La Ciudad de la Luz" porque fue pionera en la iluminación de calles y edificios.</p>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Ficha Multimedia de París</p>
+    </footer>
+</body>
+</html>
